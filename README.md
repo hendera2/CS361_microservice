@@ -36,5 +36,6 @@ EXAMPLE CALL:
 
 C. UML sequence diagram showing how requesting and receiving data works. Make it detailed enough that your partner (and your grader) will understand
 
-![Blank diagram](https://github.com/hendera2/CS361_microservice/assets/102428207/fb957780-4798-4f98-991b-859882a0f2fe)
+![UML_sequence_diagram](https://github.com/hendera2/CS361_microservice/assets/102428207/486c50e3-9c5c-4b3d-b93f-65d75e1c9c6c)
+
 
