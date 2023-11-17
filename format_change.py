@@ -3,12 +3,11 @@ import yaml
 import time
 
 while True:
-    time.sleep(3)
 
     txt = open("file_read.txt", "r+")
     file_contents = txt.read()
     if file_contents == 'run':
-
+        time.sleep(3)
         with open('communication.yaml', 'r') as file:
             working_file = yaml.safe_load(file)
 
@@ -20,7 +19,7 @@ while True:
 
         song = AudioSegment.from_wav(og_file_name_type)
         song.export(f'{og_file_name}.{new_file_format}', new_file_format)
-        
+
         with open('communication.yaml', 'w', encoding='utf-8') as outfile:
             yaml.dump(working_file, outfile, default_flow_style=False)
 

@@ -14,15 +14,11 @@ file_contents = open("file_read.txt", 'w+')
 file_contents.write("run")
 file_contents.close()
 
-time.sleep(4) 
-
 with open('communication.yaml', 'r') as file:
     working_file = yaml.safe_load(file)
 
 new_file_name = working_file['new_file_name_type']
 print(new_file_name)
-
-time.sleep(3)
 
 working_file['file_name'] = None
 working_file['new_file_format'] = None
