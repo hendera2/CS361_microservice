@@ -1,7 +1,9 @@
 from pydub import AudioSegment
 import yaml
+import time
 
 while True:
+    time.sleep(3)
 
     txt = open("file_read.txt", "r+")
     file_contents = txt.read()
@@ -24,4 +26,6 @@ while True:
 
         file_contents = open("file_read.txt", 'w+')
         file_contents.write("done")
+
+
 
